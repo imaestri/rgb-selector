@@ -206,17 +206,3 @@ html{
   border-radius: 10px;
 }
 
-
-#textFooter{
-
-  position: absolute;
-  width: 552px;
-  height: 25px;
-  left: 200px;
-  top: 430px;
-  text-align: center;
-
-
-  opacity: 0.5;
- 
-}

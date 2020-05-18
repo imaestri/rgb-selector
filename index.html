@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SELETOR RGB</title>
+</head>
+<body>
+
+    <div class="flex-container">
+    
+        <label class="labelRangeRed" >(R)Vermelho</label>
+        <input type="range" min="0" max="255" id="inputRangeRed" value="0"/>
+        <p id="inputTextRed"></p>
+        
+        <label class="labelRangeGreen" >(G) Verde</label>
+        <input type="range" min="0" max="255" id="inputRangeGreen"value="0"/>
+        <p id="inputTextGreen"></p>
+
+        <label  class="labelRangeBlue" >(B)Azul</label>
+        <input type="range" min="0" max="255" id="inputRangeBlue"value="0"/>
+        <p id="inputTextBlue"></p>
+    
+        <div id="changedColor"></div>
+        <p id="valueColor"></p>
+        <p id="textFooter">Made by Isaque Maestri 🚀</p>
+
+    </div>
+    
+<script src="js/script.js"></script>
+</body>
+</html>

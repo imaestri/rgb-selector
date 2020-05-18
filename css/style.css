@@ -1,0 +1,215 @@
+html{
+  background: rgb(21, 11, 31);
+}
+
+.flex-container {
+
+  position: absolute;
+  width: 1080px;
+  height: 437px;
+  left: 230px;
+  top: 100px;
+
+  background:slateblue;
+  border-radius: 50px;
+
+}
+
+.labelRangeRed{
+ 
+
+  position: absolute;
+  width: 177px;
+  height: 27px;
+  left: 153px;
+  top: 160px;
+
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+
+}
+
+.labelRangeGreen{
+ 
+
+  position: absolute;
+  width: 177px;
+  height: 27px;
+  left: 133px;
+  top: 210px;
+
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+
+}
+
+.labelRangeBlue{
+ 
+
+  position: absolute;
+  width: 177px;
+  height: 27px;
+  left: 120px;
+  top: 260px;
+
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+
+}
+
+
+#inputRangeRed{
+  position: absolute;
+  width: 177px;
+  height: 27px;
+  left: 350px;
+  top: 160px;
+
+  background: #C4C4C4;
+  border-radius: 30px;
+}
+
+#inputRangeGreen{
+  position: absolute;
+  width: 177px;
+  height: 27px;
+  left: 350px;
+  top: 210px;
+
+  background: #C4C4C4;
+  border-radius: 30px;
+}
+
+#inputRangeBlue{
+  position: absolute;
+  width: 177px;
+  height: 27px;
+  left: 350px;
+  top: 260px;
+
+  background: #C4C4C4;
+  border-radius: 30px;
+}
+
+
+#inputTextRed{
+
+  position: absolute;
+  width: 130px;
+  height: 20px;
+  left: 550px;
+  top: 150px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  text-decoration-color: black;
+
+
+  background: rgb(185, 185, 185);
+  opacity: 0.3;
+  border-radius: 30px;
+
+}
+
+#inputTextGreen{
+
+  position: absolute;
+  width: 130px;
+  height: 20px;
+  left: 550px;
+  top: 200px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  text-decoration-color: black;
+
+  background: rgb(185, 185, 185);
+  opacity: 0.3;
+  border-radius: 30px;
+
+}
+
+#inputTextBlue{
+
+  position: absolute;
+  width: 130px;
+  height: 20px;
+  left: 550px;
+  top: 250px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  text-decoration-color: black;
+
+  background: rgb(185, 185, 185);
+  opacity: 0.3;
+  border-radius: 30px;
+
+}
+
+
+#changedColor{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 700px;
+  top: 150px;
+
+  background: #C4C4C4;
+  border-radius: 50px;
+}
+
+
+#valueColor{
+
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  left: 700px;
+  top: 300px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  text-decoration-color: black;
+
+  background: #C4C4C4;
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+
+#textFooter{
+
+  position: absolute;
+  width: 552px;
+  height: 25px;
+  left: 250px;
+  top: 380px;
+  text-align: center;
+
+
+  opacity: 0.5;
+ 
+}

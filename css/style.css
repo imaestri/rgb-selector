@@ -1,14 +1,21 @@
 html{
   background: rgb(21, 11, 31);
+  
+  max-width: 400px;
+	margin: 0 auto;
+
 }
 
-.flex-container {
 
-  position: absolute;
-  width: 1080px;
+.flex-container {
+  
+
+  position: fixed; 
+  width: 1080px;  
   height: 437px;
   left: 230px;
   top: 100px;
+  
 
   background:slateblue;
   border-radius: 50px;
@@ -21,7 +28,7 @@ html{
   position: absolute;
   width: 177px;
   height: 27px;
-  left: 150px;
+  left: 120px;
   top: 160px;
 
   font-family: Roboto;

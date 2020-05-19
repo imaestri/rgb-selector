@@ -1,14 +1,17 @@
 
-window.addEventListener('load', start);
+window.addEventListener('DOMContentLoaded', start);
 
-const inputRangeRed = document.querySelector('#inputRangeRed');
-const inputTextRed  = document.querySelector('#inputTextRed');
-const inputRangeGreen = document.querySelector('#inputRangeGreen');
-const inputTextGreen = document.querySelector('#inputTextGreen');
-const inputRangeBlue = document.querySelector('#inputRangeBlue');
-const inputTextBlue = document.querySelector('#inputTextBlue');
-const changedColor = document.querySelector('#changedColor');
-const valueColor = document.querySelector('#valueColor');
+
+let inputRangeRed = document.querySelector('#inputRangeRed');
+let inputTextRed  = document.querySelector('#inputTextRed');
+let inputRangeGreen = document.querySelector('#inputRangeGreen');
+let inputTextGreen = document.querySelector('#inputTextGreen');
+let inputRangeBlue = document.querySelector('#inputRangeBlue');
+let inputTextBlue = document.querySelector('#inputTextBlue');
+let changeColor = document.querySelector('#changedColor');
+let valueColor = document.querySelector('#valueColor');
+
+
 
 
 
@@ -22,28 +25,38 @@ function inputWorking(){
 
     inputRangeRed.focus();
 
-    document.getElementById("inputRangeRed").addEventListener("input", function(){
-    document.getElementById("inputTextRed").innerHTML = inputRangeRed.value;
-    
+    document.addEventListener("input", function(){
+        inputTextRed = inputRangeRed.value;
+
     });
         
-    document.getElementById("inputRangeGreen").addEventListener("input", function(){
-    document.getElementById("inputTextGreen").innerHTML = inputRangeGreen.value;
+    document.addEventListener("input", function(){
+        inputTextGreen = inputRangeGreen.value;
     
     });
     
-    document.getElementById("inputRangeBlue").addEventListener("input", function(){
-    document.getElementById("inputTextBlue").innerHTML = inputRangeBlue.value;
+    document.addEventListener("input", function(){
+        inputTextBlue = inputRangeBlue.value;
     
     });
 
+    changeColors();
 
-    addEventListener("input", function(){
-    let concatColors = document.getElementById("valueColor").innerHTML = 'rgb('+inputRangeRed.value+', '+inputRangeGreen.value+', '+inputRangeBlue.value + ')';
-
-    let changedColorRgb = document.getElementById("changedColor");
-    changedColorRgb.style.backgroundColor = concatColors;    
-
-    });
-    
 }
+
+
+
+function changeColors() {
+    
+    addEventListener("input", function(){
+        
+        let concatColors = document.getElementById("valueColor").innerHTML = `rgb(${inputTextRed}, ${inputTextGreen}, ${inputTextBlue})`
+        let changedColorRgb = document.getElementById("changedColor");
+        changedColorRgb.style.backgroundColor = concatColors;    
+        
+        });
+        
+}
+
+
+

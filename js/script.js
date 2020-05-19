@@ -8,9 +8,8 @@ let inputRangeGreen = document.querySelector('#inputRangeGreen');
 let inputTextGreen = document.querySelector('#inputTextGreen');
 let inputRangeBlue = document.querySelector('#inputRangeBlue');
 let inputTextBlue = document.querySelector('#inputTextBlue');
-let changeColor = document.querySelector('#changedColor');
+let changeColor = document.querySelector('#changeColor');
 let valueColor = document.querySelector('#valueColor');
-
 
 
 
@@ -26,18 +25,18 @@ function inputWorking(){
     inputRangeRed.focus();
 
     document.addEventListener("input", function(){
-        inputTextRed = inputRangeRed.value;
+        document.getElementById("inputTextRed").textContent = inputRangeRed.value;
 
     });
         
     document.addEventListener("input", function(){
-        inputTextGreen = inputRangeGreen.value;
-    
+        document.getElementById("inputTextGreen").textContent = inputRangeGreen.value;
+        
     });
     
     document.addEventListener("input", function(){
-        inputTextBlue = inputRangeBlue.value;
-    
+        document.getElementById("inputTextBlue").textContent = inputRangeBlue.value;
+       
     });
 
     changeColors();
@@ -45,15 +44,13 @@ function inputWorking(){
 }
 
 
-
 function changeColors() {
     
     addEventListener("input", function(){
         
-        let concatColors = document.getElementById("valueColor").innerHTML = `rgb(${inputTextRed}, ${inputTextGreen}, ${inputTextBlue})`
-        let changedColorRgb = document.getElementById("changedColor");
-        changedColorRgb.style.backgroundColor = concatColors;    
-        
+        let concatColors = document.getElementById("valueColor").innerHTML = `rgb(${inputRangeRed.value}, ${inputRangeGreen.value}, ${inputRangeBlue.value})`
+        let changedColorRgb = document.getElementById("changeColor");
+        changedColorRgb.style.backgroundColor = concatColors; 
         });
         
 }

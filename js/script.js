@@ -30,7 +30,6 @@ function changeColors() {
     let concatColors = (document.getElementById(
       "valueColor"
     ).innerHTML = `rgb(${inputRangeRed.value}, ${inputRangeGreen.value}, ${inputRangeBlue.value})`);
-    let changedColorRgb = document.getElementById("changeColor");
-    changedColorRgb.style.backgroundColor = concatColors;
+    changeColor.style.backgroundColor = concatColors;
   });
 }
